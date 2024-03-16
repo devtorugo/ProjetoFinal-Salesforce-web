@@ -1,0 +1,75 @@
+
+/* styles.css */
+ 
+.texto1 {
+  color: blue;
+  position: absolute;
+  width: 823px;
+  height: 80px;
+  left: 41px;
+  top: 200px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+}
+ 
+p {
+  color: black;
+  position: absolute;
+  width: 100%;
+  max-width: 1032px;
+  height: auto;
+  left: 41px;
+  top: 360px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  overflow-wrap: break-word;
+  column-count: 1;
+  column-gap: 0;
+}
+ 
+ 
+ 
+button {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.botao1 {
+  color: white;
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  left: 41px;
+  top: 460px;
+  background: #0B4F81;
+  border-radius: 20px;
+}
+ 
+.botao2 {
+  background-color: #cccccc;
+  color: black;
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  left: 261px;
+  top: 460px;
+  border-radius: 20px;
+}
+ 
+.image {
+  position: absolute;
+  width: 621px;
+  height: 415px;
+  left: 900px;
+  top: 180px;
+}
+ 

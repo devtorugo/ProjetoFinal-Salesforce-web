@@ -1,0 +1,89 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 20px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 80px;
+  }
+  
+  .buscador {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .search-bar input {
+    width: 100%; 
+    padding: 12px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px; 
+  }
+  
+  .botoes {
+    display: flex; 
+  }
+  
+  .botoes button {
+    padding: 12px 20px; 
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-botao {
+    background-color: #ffffff;
+    color: #0037ff;
+  }
+  
+
+.botao-testegratis {
+  background-color: #ffffff;
+  color: #007bff;
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+  
+
+  .nav {
+    background-color: #e0dcdc; 
+    padding: 10px 0;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  .nav ul li {
+    margin: 0 10px; 
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #007bff; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .nav ul li a:hover {
+    background-color: #cfd8dc; 
+    color: #ffffff; 
+  }
+  

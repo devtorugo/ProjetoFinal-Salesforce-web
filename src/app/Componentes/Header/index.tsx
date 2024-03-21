@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import Link from "next/link";
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
           <input type="text" placeholder="Buscar serviços..." />
         </div>
         <div className="botoes">
-          <button className="login-botao">Login</button>
+          <Link href={'/login'}><button className="login-botao">Login</button></Link>
           <button className="botao-testegratis">Teste Grátis</button>
         </div>
       </header>

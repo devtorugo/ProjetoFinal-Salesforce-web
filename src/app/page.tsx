@@ -13,6 +13,8 @@ export default function Home() {
         botao2={"Saiba mais"}
 
          image={"./sales.png"} alt={"imagem do produto"} />
+
+         
     </main>
   );
 };

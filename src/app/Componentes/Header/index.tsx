@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div className="botoes">
           <Link href={'/login'}><button className="login-botao">Login</button></Link>
-          <button className="botao-testegratis">Teste Grátis</button>
+          <Link href={'/testegratis'}><button className="botao-testegratis">Teste Grátis</button></Link>
         </div>
       </header>
 

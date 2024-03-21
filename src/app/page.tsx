@@ -1,5 +1,5 @@
 
-import Conteudo from "./Conteudo";
+import Conteudo from "./conteudo";
 
 export default function Home() {
   return (

@@ -3,15 +3,9 @@ import Image from "next/image";
 import './styles.css';
 import React from 'react';
 import Link from "next/link";
+import { Props } from "./interface";
  
-interface Props {
-    texth1: string;
-    textp: string;
-    botao1: string;
-    botao2: string;
-    image: string;
-    alt: string;
-}
+
  
 const Conteudo = (props : Props) => {
     return(

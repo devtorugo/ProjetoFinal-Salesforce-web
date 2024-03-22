@@ -5,5 +5,5 @@ export interface Props {
     botao2: string;
     image: string;
     alt: string;
-    onClick: any;
+   
 }

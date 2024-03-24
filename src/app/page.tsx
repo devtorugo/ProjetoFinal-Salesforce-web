@@ -1,6 +1,7 @@
 
-import Conteudo from "./conteudo";
 import Link from 'next/link';
+import Conteudo from './componentes/conteudo';
+
 
 
 export default function Home() {

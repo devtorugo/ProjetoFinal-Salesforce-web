@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Projeto de Monitoramento de Cliques em uma Página Web
 
-First, run the development server:
+Este projeto consiste em uma aplicação web que monitora cliques do usuário e gera um heatmap (mapa de calor) com base nos dados coletados. A seguir, é apresentado um guia básico sobre o projeto.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Visão Geral
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação é desenvolvida utilizando a biblioteca React.js para o frontend e JavaScript para o backend. O projeto inclui uma página web com cabeçalho, conteúdo, rodapé e um componente responsável pelo monitoramento dos cliques. Os dados de clique são coletados e armazenados em formato CSV para posterior análise e geração do heatmap.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Componentes
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Header
 
-## Learn More
+Componente que exibe o cabeçalho da página, contendo o logotipo da empresa e botões de login e teste grátis.
 
-To learn more about Next.js, take a look at the following resources:
+### Footer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Componente que exibe o rodapé da página, contendo um botão para acessar a página de participantes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Conteúdo
 
-## Deploy on Vercel
+Componente que apresenta o conteúdo principal da página, incluindo texto, botões e imagens promocionais.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Login
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Componente responsável pela interface de login do usuário.
+
+### Participantes
+
+Componente que exibe uma lista de participantes com suas respectivas imagens e informações.
+
+### Teste Grátis
+
+Componente que exibe informações sobre o teste gratuito da aplicação CRM e um formulário para registro de interesse.
+
+### RootLayout
+
+Componente de layout principal que engloba todos os outros componentes e define a estrutura básica da página.
+
+## Funcionalidades
+
+- **Monitoramento de cliques:** Utiliza um componente para rastrear os cliques do usuário na página.
+- **Geração de heatmap:** Os dados de cliques são processados e utilizados para gerar um mapa de calor, mostrando as áreas mais clicadas da página.
+- **Exportação de dados:** Os dados de cliques são exportados em formato CSV para permitir análises adicionais.
+
+## Como Usar
+
+1. Clone o repositório para sua máquina local.
+2. Instale as dependências necessárias executando `npm install`.
+3. Inicie a aplicação com `npm start`.
+4. Interaja com a página web normalmente e os cliques serão registrados automaticamente.
+5. Ao finalizar a sessão, os dados de cliques serão exportados para um arquivo CSV automaticamente.
+6. Analise os dados exportados e gere o heatmap conforme necessário.
+
+
+Este projeto foi desenvolvido por Victor Hugo Zambelli.
+
+Para mais informações ou suporte, entre em contato pelo email: victorzarbesugmail.com

@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import Conteudo from './componentes/conteudo';
+import Conteudo from './Componentes/Conteudo';
 
 
 

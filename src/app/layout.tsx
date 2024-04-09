@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./Componentes/Header";
 import Footer from "./Componentes/Footer";
-import ClickTracker from './clicks/clickTracker';
+import ClickTracker from './Clicks/clickTracker';
 
 const inter = Inter({ subsets: ["latin"] });
 

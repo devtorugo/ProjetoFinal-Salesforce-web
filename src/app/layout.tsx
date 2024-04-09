@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./Componentes/Header";
-import Footer from "./Componentes/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import ClickTracker from './Clicks/clickTracker';
 
 const inter = Inter({ subsets: ["latin"] });

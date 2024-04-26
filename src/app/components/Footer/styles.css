@@ -1,20 +1,35 @@
-
 footer {
   position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  background-color: #f2f2f2;
-  padding: 20px 0;
-  text-align: center; 
+  background-color: #007bff;
+  bottom: 0;
+  border-top: solid 1px #007bff;
+  padding: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.footer-section > p {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.footer-section > a {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 2px;
 }
 
-.botaoFooter {
-  padding: 12px 24px; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #0B4F81;
-  color: white;
-  text-decoration: none; 
+.footerpesquisas {
+  align-items: center;
+  display: flex;
+  gap: 40px; 
+  flex-wrap: wrap;
 }
+

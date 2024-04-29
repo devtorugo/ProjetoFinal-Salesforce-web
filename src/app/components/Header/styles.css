@@ -41,11 +41,22 @@
 .login-botao {
   background-color: #ffffff;
   color: #0037ff;
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url('https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-light-blue');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px 20px; /* Ajuste o tamanho conforme necessário */
+  padding-left: 20px; /* Espaçamento para acomodar a imagem */
 }
 
+
 .botao-testegratis {
-  background-color: #ffffff;
-  color: #007bff;
+  background-color: #11a11a;
+  color: #ffffff;
   padding: 12px 20px;
   margin-left: 10px;
   border: none;

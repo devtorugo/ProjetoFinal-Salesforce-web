@@ -1,26 +1,28 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 /* Estilo para o título */
 .titulo {
-  color: blue;
+  color: #04338f;
   font-size: 64px;
   font-weight: bold;
   font-family: Arial, sans-serif; /* Fonte padrão */
   white-space: pre-wrap;
   margin-top: 50px;
-  left: 250px;
+  margin-left: 35px; /* Ajusta o título para a direita */
 }
 
 /* Estilo para o parágrafo */
 .paragrafo {
   color: black;
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-size: 20px; /* Aumenta o tamanho do parágrafo */
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold; /* Coloca o parágrafo em negrito */
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
+  margin-left: 35px; /* Ajusta o parágrafo para a direita */
 }
 
 /* Ajustes para os botões */
@@ -40,19 +42,20 @@ button {
   left: 41px;
   top: 550px;
   background: #0B4F81;
-  border-radius: 24px;
+  border-radius: 8px; /* Ajusta o raio da borda */
 }
 
 /* Ajustes para o botão 2 */
 .botao2 {
-  background-color: #cccccc;
   color: black;
   position: absolute;
   width: 240px;
   height: 80px;
   left: 341px;
   top: 550px;
-  border-radius: 24px;
+  background: #ffffff; /* Altera o fundo para branco */
+  border: 2px solid #04338f; /* Adiciona uma borda azul */
+  border-radius: 8px; /* Ajusta o raio da borda */
 }
 
 /* Ajustes para a imagem */

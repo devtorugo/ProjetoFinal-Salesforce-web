@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.products {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding-top: 4em;
+  margin-top: 6em; /* Adiciona margem superior */
+}
+
+.product-box {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.products h2 {
+  color: #04338f;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 6em; /* Adiciona margem superior */
+}
+
+@media (max-width: 962px) {
+  .product-box {
+    flex-wrap: wrap;
+  }
+
+  .products h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 6em; /* Adiciona margem superior */
+  }
+}
+
+/* Responsividade 600 */
+@media (min-width: 0px) and (max-width: 600px) {
+  .products {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 2em;
+    margin-top: 6em; /* Adiciona margem superior */
+  }
+
+  .product-box {
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  .products h2 {
+    color: #04338f;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 6em; /* Adiciona margem superior */
+  }
+}
+
+/* Responsividade 600-800 */
+@media (min-width: 601px) and (max-width: 800px) {
+  .products {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 2em;
+    margin-top: 6em; /* Adiciona margem superior */
+  }
+
+  .product-box {
+    flex-wrap: wrap;
+    padding: 1.5em;
+  }
+
+  .products h2 {
+    color: #04338f;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 6em; /* Adiciona margem superior */
+  }
+}

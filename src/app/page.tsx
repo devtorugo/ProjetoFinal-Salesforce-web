@@ -1,6 +1,7 @@
-
+'use client'
 import Link from 'next/link';
 import Conteudo from './components/Conteudo';
+import Produtos from './produtos';
 
 
 
@@ -18,6 +19,8 @@ export default function Home() {
       botao2={"Saiba mais"}
 
       image={"./sales.png"} alt={"imagem do produto"} />
+
+      <Produtos />
 
          
     </main>

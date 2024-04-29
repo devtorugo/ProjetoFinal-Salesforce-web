@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.card {
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 6em auto 2em; 
+  max-width: 20em; 
+  padding: 1em; 
+}
+
+.card h3 {
+  color: #04338f;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 20px 10px; 
+  color: black;
+  font-size: 15px;
+  min-height: 6em;
+}
+
+.card button {
+  margin: 0 20px 20px;
+  background-color: #04338f;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #F5F5F5;
+}
+
+.card button:hover {
+  background-color: #001d56;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .card {
+    width: 90%; 
+    max-width: none; 
+    height: auto; 
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .card {
+    width: 80%; 
+    max-width: none;
+    height: auto; 
+  }
+}

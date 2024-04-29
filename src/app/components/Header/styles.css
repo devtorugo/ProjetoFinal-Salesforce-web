@@ -1,132 +1,105 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #007bff;
-  padding: 20px 20px;
+  background-color: #ffffff; 
+  padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-  width: 200px;
-  height: 80px;
+.logo {
+  margin-right: 20px;
 }
 
-.buscador {
-  flex: 1;
+.logo img {
+  width: 100px;
+  height: 70px;
+}
+
+.nav {
+  margin-right: auto;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #022468; 
+  font-weight: bold; 
+}
+
+.content {
   display: flex;
   align-items: center;
 }
 
 .buscador input {
-  width: 100%;
-  padding: 12px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-right: 20px;
 }
 
-.botoes {
-  display: flex;
-}
-
 .botoes button {
-  padding: 12px 20px;
-  margin-left: 10px;
+  padding: 12px 40px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .login-botao {
   background-color: #ffffff;
-  color: #0037ff;
-  padding: 12px 20px;
-  margin-left: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #022468;
   background-image: url('https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-light-blue');
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 20px 20px; /* Ajuste o tamanho conforme necessário */
-  padding-left: 20px; /* Espaçamento para acomodar a imagem */
+  background-position: 10px center; 
+  background-size: 20px 20px; 
+  padding-left: 40px; 
 }
-
 
 .botao-testegratis {
   background-color: #11a11a;
-  color: #ffffff;
-  padding: 12px 20px;
-  margin-left: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.nav {
-  background-color: #e0dcdc;
-  padding: 10px 0;
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  margin: 0 10px;
-}
-
-.nav ul li a {
-  text-decoration: none;
-  color: #007bff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.nav ul li a:hover {
-  background-color: #cfd8dc;
   color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px;
   }
 
-  .buscador {
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav {
+    margin-right: 0;
     margin-top: 10px;
-    margin-bottom: 10px;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 10px 0;
   }
 
   .botoes {
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
   }
 
   .botoes button {
     margin-left: 0;
     margin-top: 10px;
-  }
-
-  .logo img {
-    width: 150px;
-    height: auto;
-  }
-
-  .nav ul li {
-    margin: 10px 0;
-  }
-
-  .nav ul li a {
-    display: block;
-    padding: 10px;
-    text-align: center;
   }
 }

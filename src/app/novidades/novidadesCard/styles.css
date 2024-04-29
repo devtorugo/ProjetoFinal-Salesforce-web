@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.cards-container {
+  display: flex; /* Define um flex container */
+  justify-content: center; /* Alinha os elementos ao centro */
+  gap: 2em; /* Espaçamento entre os cartões */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+}
+
+.card {
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 20em; 
+  padding: 1em; 
+}
+
+.card h3 {
+  color: #04338f;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 20px 10px; 
+  color: black;
+  font-size: 15px;
+  min-height: 6em;
+}
+
+.card button {
+  margin: 0 20px 20px;
+  background-color: #04338f;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #F5F5F5;
+}
+
+.card button:hover {
+  background-color: #001d56;
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column; /* Altera a direção do flex container para coluna em telas menores */
+    align-items: center; /* Alinha os elementos ao centro na direção da coluna */
+  }
+  
+  .card {
+    width: 100%; /* Define a largura total para os cartões em telas menores */
+  }
+}

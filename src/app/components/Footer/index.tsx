@@ -1,5 +1,7 @@
 import Image from "next/image";
 import "./styles.css"
+
+
  
 const Footer = () => {
     return (
@@ -30,11 +32,16 @@ const Footer = () => {
                         <a href="">Salesforce para pequenas empresas</a>
                         <a href="">Encontre ou torne-se um parceiro</a>
                         <a href="">CRM Software</a>
+
+                        
                     </div>
                 </div>
             </footer>
+            
         </>
     );
 };
+
+
  
 export default Footer;

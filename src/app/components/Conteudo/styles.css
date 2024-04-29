@@ -1,31 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
-/* Estilo para o título */
 .titulo {
-  color: #04338f;
+  color: #022468;
   font-size: 64px;
   font-weight: bold;
-  font-family: Arial, sans-serif; /* Fonte padrão */
+  font-family: Arial, sans-serif; 
   white-space: pre-wrap;
-  margin-top: 50px;
-  margin-left: 35px; /* Ajusta o título para a direita */
+  margin-top: 80px;
+  margin-left: 100px; 
 }
 
-/* Estilo para o parágrafo */
 .paragrafo {
   color: black;
-  font-size: 20px; /* Aumenta o tamanho do parágrafo */
-  font-family: 'DM Sans', sans-serif;
-  font-weight: bold; /* Coloca o parágrafo em negrito */
+  font-size: 20px;  
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
-  margin-left: 35px; /* Ajusta o parágrafo para a direita */
+  margin-left: 100px; 
 }
 
-/* Ajustes para os botões */
+
 button {
   padding: 20px 40px;
   border: none;
@@ -33,36 +29,35 @@ button {
   cursor: pointer;
 }
 
-/* Ajustes para o botão 1 */
 .botao1 {
   color: white;
   position: absolute;
   width: 240px;
-  height: 80px;
-  left: 41px;
-  top: 550px;
-  background: #0B4F81;
-  border-radius: 8px; /* Ajusta o raio da borda */
+  height: 70px;
+  left: 91px;
+  top: 750px;
+  background: #022468;
+  border-radius: 8px; 
 }
 
-/* Ajustes para o botão 2 */
+
 .botao2 {
   color: black;
   position: absolute;
   width: 240px;
-  height: 80px;
-  left: 341px;
-  top: 550px;
-  background: #ffffff; /* Altera o fundo para branco */
-  border: 2px solid #04338f; /* Adiciona uma borda azul */
-  border-radius: 8px; /* Ajusta o raio da borda */
+  height: 70px;
+  left: 371px;
+  top: 750px;
+  background: #ffffff; 
+  border: 2px solid #022468; 
+  border-radius: 8px; 
 }
 
-/* Ajustes para a imagem */
+
 .image {
   position: absolute;
   width: 800px;
   height: auto;
-  left: 1100px;
-  top: 180px;
+  left: 950px;
+  top: 290px;
 }

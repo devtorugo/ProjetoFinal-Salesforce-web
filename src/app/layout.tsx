@@ -21,10 +21,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
  return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <Header></Header>
+        <Header />
         <ClickTracker />
         {children}
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
  );

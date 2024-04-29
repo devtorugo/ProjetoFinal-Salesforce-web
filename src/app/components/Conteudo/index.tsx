@@ -7,8 +7,9 @@ import './styles.css';
 const Conteudo = (props: Props) => {
     return (
         <div className="conteudoContainer">
-            <h1 className="titulo">Entregue sucesso agora com o<br/> Salesforce Costumer360.</h1>
-            <p className="paragrafo">O Customer 360 é nossa suíte de produtos e serviços <br></br> que ajuda 98% dos clientes a alcançar ou superar suas metas ROI.</p>
+            <h1 className="titulo"> Experimente o <br></br> Salesforce Starter <br></br> Suite <br></br> gratuitamente.</h1>
+            <p className="paragrafo">Reúna marketing, vendas e atendimento em um único <br></br> aplicativo. Experimente o Salesforce 
+            Starter Suite hoje<br></br> mesmo. Não há nada para instalar. Não é necessário<br></br> cartão de crédito.</p>
             <div className="botoesContainer">
                 <Link href={"/testegratis"}><button className="botao1">Faça o teste grátis</button></Link>
                 <button className="botao2">Saiba mais</button>

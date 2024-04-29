@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Conteudo from './components/Conteudo';
 import Produtos from './produtos';
+import Novidades from './novidades';
 
 
 
@@ -18,9 +19,10 @@ export default function Home() {
 
       botao2={"Saiba mais"}
 
-      image={"./sales.png"} alt={"imagem do produto"} />
+      image={"./startimage.webp"} alt={"imagem do produto"} />
 
       <Produtos />
+      <Novidades />
 
          
     </main>

@@ -7,7 +7,7 @@ const Novidades = ()=> {
     return(
         <>
            <div className="novidades">
-                <h2 className="text-center">O que há de novo na Salesforce</h2>
+                <h2 className="text-novi">O que há de novo na Salesforce</h2>
                 <div className="novidade-box">
                         <NovidadeCard
                             image='/image1.webp'

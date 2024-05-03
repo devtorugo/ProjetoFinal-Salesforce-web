@@ -1,54 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-.cards-container {
-  display: flex; /* Define um flex container */
-  justify-content: center; /* Alinha os elementos ao centro */
-  gap: 2em; /* Espaçamento entre os cartões */
-  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
-}
-
-.card {
-  background-color: #EEEEEE;
+.cardnovi {
+  background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  max-width: 20em; 
-  padding: 1em; 
+  width: 40%; 
+  max-width: 300px;
+  padding: 1.5em;
+  margin: 1em auto 0; 
+  box-sizing: border-box;
 }
 
-.card h3 {
-  color: #04338f;
+.cardnovi img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px; 
+}
+
+.cardnovi .novidades-content {
+  margin-top: 1em;
+}
+
+.cardnovi .novidades-content h3 {
+  color: #000000;
   font-weight: 700;
   font-family: 'DM Sans', sans-serif;
-  margin-left: 20px;
-  font-size: 18px;
+  font-size: 1.2em; 
+  margin-bottom: 0.5em; 
 }
 
-.card p {
-  margin: 0 20px 10px; 
-  color: black;
-  font-size: 15px;
-  min-height: 6em;
-}
-
-.card button {
-  margin: 0 20px 20px;
-  background-color: #04338f;
-  padding: 5px 20px;
+.cardnovi .novidades-content button {
+  display: block; 
+  width: auto; 
+  background-color: #022468;
+  color: #ffffff;
+  padding: 0.3em 1em; 
   border-radius: 10px;
-  color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; 
 }
 
-.card button:hover {
+.cardnovi .novidades-content button:hover {
   background-color: #001d56;
-}
-
-@media (max-width: 600px) {
-  .cards-container {
-    flex-direction: column; /* Altera a direção do flex container para coluna em telas menores */
-    align-items: center; /* Alinha os elementos ao centro na direção da coluna */
-  }
-  
-  .card {
-    width: 100%; /* Define a largura total para os cartões em telas menores */
-  }
 }

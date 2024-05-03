@@ -12,7 +12,7 @@ const Conteudo = (props: Props) => {
             Starter Suite hoje<br></br> mesmo. Não há nada para instalar. Não é necessário<br></br> cartão de crédito.</p>
             <div className="botoesContainer">
                 <Link href={"/testegratis"}><button className="botao1">Faça o teste grátis</button></Link>
-                <button className="botao2">Saiba mais</button>
+                <Link href={"/saibamais"}><button className="botao2">Saiba mais</button></Link>
             </div>
             <div className="imagemContainer">
                 <img className="image" src={props.image} alt={props.alt}/>

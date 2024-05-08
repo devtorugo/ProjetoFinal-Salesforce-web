@@ -1,7 +1,55 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import './styles.css';
 
 const TesteGratis = () => {
+    const [nome, setNome] = useState("");
+    const [sobrenome, setSobrenome] = useState("");
+    const [email, setEmail] = useState("");
+    const [telefone, setTelefone] = useState("");
+    const [empresa, setEmpresa] = useState("");
+    const [regiao, setRegiao] = useState("");
+    const [idioma, setIdioma] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [erro, setErro] = useState("");
+    const [resposta, setResposta] = useState("");
+
+    const handleClick = async () => {
+        setErro("");
+        setResposta("");
+
+        // Validar campos obrigatórios
+        if (!nome || !sobrenome || !email || !telefone || !empresa || !regiao || !idioma) {
+            setErro("Por favor, preencha todos os campos.");
+            return;
+        }
+
+        setLoading(true);
+
+        try {
+            const response = await fetch("http://localhost:8080/testes-gratis", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ nome, sobrenome, email, telefone, empresa, regiao, idioma })
+            });
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                setErro(errorMessage);
+            } else {
+                const successMessage = await response.text();
+                setResposta(successMessage);
+            }
+        } catch (error) {
+            console.error("Erro ao fazer a solicitação:", error);
+            setErro("Ocorreu um erro ao processar sua solicitação.");
+        }
+
+        setLoading(false);
+    };
+
     return (
         <div className="container">
             <div className="texto">
@@ -23,20 +71,34 @@ const TesteGratis = () => {
             </div>
             <div className="formulario">
                 <label htmlFor="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" />
+                <input id="nome" onChange={(e) => setNome(e.target.value)} type='text' className="nome" />
+
                 <label htmlFor="sobrenome">Sobrenome:</label>
-                <input type="text" id="sobrenome" name="sobrenome" />
+                <input id="sobrenome" onChange={(e) => setSobrenome(e.target.value)} type="text" className="sobrenome" />
+
                 <label htmlFor="email">Email corporativo:</label>
-                <input type="email" id="email" name="email" />
+                <input id="email" onChange={(e) => setEmail(e.target.value)} type="email" className="email" />
+
                 <label htmlFor="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" />
-                <label htmlFor="tamanho-empresa">Tamanho da empresa:</label>
-                <input type="text" id="tamanho-empresa" name="tamanho-empresa" />
-                <label htmlFor="pais">País/Região:</label>
-                <input type="text" id="pais" name="pais" />
+                <input id="telefone" onChange={(e) => setTelefone(e.target.value)} type="tel" className="telefone" />
+
+                <label htmlFor="empresa">Empresa:</label>
+                <input id="empresa" onChange={(e) => setEmpresa(e.target.value)} type="text" className="empresa" />
+
+                <label htmlFor="regiao">País/Região:</label>
+                <input id="regiao" onChange={(e) => setRegiao(e.target.value)} type="text" className="regiao" />
+
                 <label htmlFor="idioma">Idioma:</label>
-                <input type="text" id="idioma" name="idioma" />
-                <button className="botao">INICIAR TESTE GRATUITO</button>
+                <input id="idioma" onChange={(e) => setIdioma(e.target.value)} type="text" className="idioma" />
+
+                {loading ? (
+                    <button className="botao" disabled>Enviando...</button>
+                ) : (
+                    <button onClick={handleClick} className="botao">INICIAR TESTE GRATUITO</button>
+                )}
+
+                {erro && <p className='error'>{erro}</p>}
+                {resposta && <p className="success">{resposta}</p>}
             </div>
         </div>
     );

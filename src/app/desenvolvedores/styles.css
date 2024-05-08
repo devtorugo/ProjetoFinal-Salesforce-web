@@ -1,0 +1,62 @@
+
+.developer-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  h1 {
+    font-size: 32px;
+    color: #333; 
+    margin-bottom: 30px;
+  }
+  
+  
+  .developer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  .developer {
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #e0dfdf2c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .developer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px; 
+  }
+  
+ 
+  .developer p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000; 
+    margin-bottom: 10px;
+  }
+  
+ 
+  .developer span {
+    font-size: 16px;
+    color: #666; 
+  }
+  
+
+  a {
+    color: #1e3a8a; 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

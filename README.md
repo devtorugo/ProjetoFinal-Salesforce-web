@@ -1,9 +1,9 @@
-# Projeto de Monitoramento de Cliques em uma Página Web
+# Projeto desenvolvido para a empresa Salesforce 
 
 Este projeto consiste em uma aplicação web que monitora cliques do usuário e gera um heatmap (mapa de calor) com base nos dados coletados. A seguir, é apresentado um guia básico sobre o projeto.
 
 ## Visão Geral
-A aplicação é desenvolvida utilizando a biblioteca React.js para o frontend e JavaScript para o backend. O projeto inclui uma página web com cabeçalho, conteúdo, rodapé e um componente responsável pelo monitoramento dos cliques. Os dados de clique são coletados e armazenados em formato CSV para posterior análise e geração do heatmap.
+A aplicação é desenvolvida utilizando a biblioteca React.js para o frontend e Java para o backend. O projeto inclui uma página web com cabeçalho, conteúdo, rodapé e um componente responsável pelo monitoramento dos cliques. Os dados de clique são coletados e armazenados em formato CSV para posterior análise e geração do heatmap.
 
 ## Componentes
 ### Header
@@ -22,6 +22,7 @@ Componente que exibe informações sobre o teste gratuito da aplicação CRM e u
 Componente de layout principal que engloba todos os outros componentes e define a estrutura básica da página.
 
 ## Funcionalidades
+- **Permite o Usuário realizar um cadastro e este cadastro ser enviado para o sistema em java que realiza o cadastro no banco de dados (Oracle).
 - **Monitoramento de cliques:** Utiliza um componente para rastrear os cliques do usuário na página.
 - **Geração de heatmap:** Os dados de cliques são processados e utilizados para gerar um mapa de calor, mostrando as áreas mais clicadas da página.
 - **Exportação de dados:** Os dados de cliques são exportados em formato CSV para permitir análises adicionais.
@@ -50,6 +51,6 @@ Componente de layout principal que engloba todos os outros componentes e define 
 ## Autor
 Este projeto foi desenvolvido por Victor Hugo Zambelli.
 
-Para mais informações ou suporte, entre em contato pelo email: [victorzarbesu@gmail.com]
+Para mais informações, entre em contato pelo email: [victorzarbesu@gmail.com]
 
 

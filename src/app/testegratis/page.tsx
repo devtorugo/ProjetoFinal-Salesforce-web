@@ -9,12 +9,11 @@ const TesteGratis = () => {
     const [senha, setSenha] = useState("");
     const [empresa, setEmpresa] = useState("");
     const [idioma, setIdioma] = useState("");
-    const [regiao, setRegiao] = useState("");
-    const [termo, setTermo] = useState("");
+  
 
 const handleClick = async () => {
     // Validação básica dos campos
-    if (!nome || !telefone || !email || !senha || !empresa || !idioma || !regiao || !termo) {
+    if (!nome || !telefone || !email || !senha || !empresa || !idioma) {
         alert("Por favor, preencha todos os campos.");
         return;
     }
@@ -32,14 +31,13 @@ const handleClick = async () => {
                 senha: senha, 
                 empresa: empresa, 
                 idioma: idioma, 
-                regiao: {regiao: regiao}, 
-                termo: {termo: termo}
+               
             })
         });
 
         const dados = await response.json();
         console.log(dados);
-        alert("Teste grátis efeutado!");
+        alert("Teste grátis efetuado!");
     } catch (error) {
         console.log("Ocorreu um erro");
         console.log(error);
@@ -72,13 +70,6 @@ const handleClick = async () => {
         setIdioma(event.target.value);
     };
 
-    const handleRegiaoChange = (event: any) => {
-        setRegiao(event.target.value);
-    };
-
-    const handleTermoChange = (event: any) => {
-        setTermo(event.target.value);
-    };
 
     return (
         <div className="container">
@@ -118,11 +109,6 @@ const handleClick = async () => {
                 <label htmlFor="idioma">Idioma:</label>
                 <input id="idioma" onChange={handleIdiomaChange} type="text"  />
 
-                <label htmlFor="regiao">País/Região:</label>
-                <input id="regiao" onChange={handleRegiaoChange} type="text"/>
-
-                <label htmlFor="termo">Aceitar Termo: "true/false"</label>
-                <input id="termo" onChange={handleTermoChange} type="text"/>
 
                 <button onClick={handleClick} className="botao">INICIAR TESTE GRATUITO</button>
             </div>

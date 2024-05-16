@@ -121,7 +121,7 @@ const handleClick = async () => {
                 <label htmlFor="regiao">País/Região:</label>
                 <input id="regiao" onChange={handleRegiaoChange} type="text"/>
 
-                <label htmlFor='termo'>Aceitar Termo: 'true/false'</label>
+                <label htmlFor="termo">Aceitar Termo: "true/false"</label>
                 <input id="termo" onChange={handleTermoChange} type="text"/>
 
                 <button onClick={handleClick} className="botao">INICIAR TESTE GRATUITO</button>

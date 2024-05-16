@@ -21,7 +21,7 @@ const handleClick = async () => {
 
     try {
         const response = await fetch("http://localhost:8080/testes-gratis", {
-            method: "post",
+            method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -39,7 +39,7 @@ const handleClick = async () => {
 
         const dados = await response.json();
         console.log(dados);
-        alert("Teste grátis enviado com sucesso!");
+        alert("Teste grátis efeutado!");
     } catch (error) {
         console.log("Ocorreu um erro");
         console.log(error);

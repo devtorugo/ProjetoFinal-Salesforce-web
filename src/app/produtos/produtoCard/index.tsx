@@ -1,5 +1,5 @@
 import "./styles.css";
-import InterfaceProductCard from "./interfaces"
+import InterfaceProductCard from "./interfaces";
 import Image from "next/image";
  
 const ProductCard = (props: InterfaceProductCard) => {

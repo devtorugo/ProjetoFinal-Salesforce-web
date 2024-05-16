@@ -1,5 +1,5 @@
-import ProductCard from "./produtoCard"
-import "./styles.css";
+import ProductCard from './produtoCard'
+import './styles.css';
  
  
 const Produtos = ()=> {

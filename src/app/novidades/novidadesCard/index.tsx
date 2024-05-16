@@ -1,7 +1,7 @@
-import React from "react";
-import "./styles.css";
-import NovidadesCard from "./interfaces";
-import Image from "next/image";
+import React from 'react';
+import './styles.css';
+import NovidadesCard from './interfaces';
+import Image from 'next/image';
 
 const NovidadeCard = (props: NovidadesCard) => {
   return (
@@ -13,7 +13,7 @@ const NovidadeCard = (props: NovidadesCard) => {
  
         <div className="novidades-content">
           <h3>{props.title}</h3>
-          <button className="link-conheca">Conheça agora</button> {/* Adicionando a classe "link-conheca" ao botão */}
+          <button className='link-conheca'>Conheça agora</button> {/* Adicionando a classe "link-conheca" ao botão */}
         </div>
       </div>
     </>

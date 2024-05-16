@@ -1,8 +1,8 @@
 import "./styles.css";
-import productCard from "./interfaces"
+import InterfaceProductCard from "./interfaces"
 import Image from "next/image";
  
-const ProductCard = (props: productCard) => {
+const ProductCard = (props: InterfaceProductCard) => {
   return (
     <>
       <div className="card">

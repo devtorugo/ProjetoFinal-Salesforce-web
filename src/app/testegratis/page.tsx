@@ -97,31 +97,31 @@ const handleClick = async () => {
                 </ul>
                 <h3>Dúvidas?</h3>
                 <p>Entre em contato e fale com um de nossos especialistas: 0800 891 1887</p>
-                <img src="/imagemteste.png" alt="" />
+                <img src='/imagemteste.png' alt='' />
             </div>
             <div className="formulario">
                 <label htmlFor="nome">Nome:</label>
-                <input id="nome" onChange={handleNomeChange} type="json"/>
+                <input id="nome" onChange={handleNomeChange} type="text"/>
 
                 <label htmlFor="telefone">Telefone:</label>
-                <input id="telefone" onChange={handleTelefoneChange} type="json" />
+                <input id="telefone" onChange={handleTelefoneChange} type="text" />
 
                 <label htmlFor="email">Email corporativo:</label>
-                <input id="email" onChange={handleEmailChange} type="json" />
+                <input id="email" onChange={handleEmailChange} type="text" />
 
                 <label htmlFor="senha">Senha:</label>
-                <input id="senha" onChange={handleSenhaChange} type="json"/>
+                <input id="senha" onChange={handleSenhaChange} type="text"/>
 
                 <label htmlFor="empresa">Empresa:</label>
-                <input id="empresa" onChange={handleEmpresaChange} type="json" />
+                <input id="empresa" onChange={handleEmpresaChange} type="text" />
                 
                 <label htmlFor="idioma">Idioma:</label>
-                <input id="idioma" onChange={handleIdiomaChange} type="json"  />
+                <input id="idioma" onChange={handleIdiomaChange} type="text"  />
 
                 <label htmlFor="regiao">País/Região:</label>
                 <input id="regiao" onChange={handleRegiaoChange} type="text"/>
 
-                <label htmlFor="termo">Aceitar Termo: "true/false"</label>
+                <label htmlFor='termo'>Aceitar Termo: 'true/false'</label>
                 <input id="termo" onChange={handleTermoChange} type="text"/>
 
                 <button onClick={handleClick} className="botao">INICIAR TESTE GRATUITO</button>
